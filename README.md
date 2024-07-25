@@ -1,7 +1,7 @@
 <kbd>Spotify Clone Project</kbd>
 
 
-Este é um projeto de clone do Spotify criado com o intuito de aprendizagem. O projeto utiliza HTML, CSS e Bootstrap para replicar a interface do Spotify.
+Este é um projeto de clone do Spotify criado com o intuito de aprendizagem. O projeto utiliza HTML, CSS e Bootstrap para replicar a interface do Spotify. Solicitação de projeto: Professor Maurício Jr. Matéria: Introdução ao desenvolvimento web
 
 
 <kbd>Sobre o Projeto</kbd>
@@ -23,7 +23,7 @@ Bootstrap
 
 
 Abra o arquivo index.html em um navegador da web para visualizar o clone do Spotify.
-link:https://maurosantos2004.github.io/Clone-Spotify/
+link:
 
 <kbd>Agradecimento</kbd>
 
