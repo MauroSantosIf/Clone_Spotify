@@ -23,7 +23,7 @@ Bootstrap
 
 
 Abra o arquivo index.html em um navegador da web para visualizar o clone do Spotify.
-link:
+link:https://maurosantosif.github.io/Clone_Spotify/
 
 <kbd>Agradecimento</kbd>
 
