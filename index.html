@@ -1,226 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html lang="pt-BR">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Spotify</title>
+  <link rel="shortcut icon" href="imagens/favicon-spotify.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<body>
 
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
 
-    <title>Música para todos - Spotify</title>
-    <link rel="icon" href="imagens/favicon.png">
-  </head>
-  <body>
-    
-    <header><!-- inicio Cabecalho -->
-      <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
-        <div class="container">
+  <div class="container">
+    <div class="logo-container">
+      <img src="imagens/spotify-logo.png" alt="Logo do Spotify">
+    </div>
+    <div class="message-error">
+      <span> <img src="imagens/alerta.png" alt="Sinal de alerta"> Nome de usuário ou senha incorretos.</span>
+    </div>
+
+    <div class="spacing-form">
+      <hr>
+      <span>Cadastre-se</span>
+      <hr>
+    </div>
+
+    <div class="form">
+      <div class="input-group">
+        <div class="input-box">
+          <label for="email">Endereço de e-mail</label>
+          <input id="email" class="required" type="email" placeholder="Digite seu Endereço de e-mail">
+          <p class="p-message-error" id="email-error"><img class="p-error-message-icon" src="imagens/alerta2.png" alt="Sinal de alerta"> Insira um endereço de e-mail válido.</p>
+        </div>
+
+        <div class="input-box">
+          <label for="password">Senha</label>
+          <div class="password-container">
+            <input class="password required" id="password" type="password" placeholder="Crie sua Senha">
+            
+          </div>
+          <p class="p-message-error" id="password-error"><img class="p-error-message-icon"  alt="Sinal de alerta"> Por favor, insira sua senha.</p>
+        </div>
+
+        <div class="input-box">
           
-          <a href="index.html" class="navbar-brand">
-            <img src="imagens/spotify.svg" alt="spotify" width="142">
-          </a>
-
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="nav-principal">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a href="" class="nav-link">Premium</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">Ajuda</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">Baixar</a>
-              </li>
-
-              <li class="nav-item">
-                <a href="login.html" class="nav-link">Entrar</a>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </nav>
-    </header><!--/fim Cabecalho -->
-
-    <section id="home" class="d-flex"><!--home -->
-      <div class="container align-self-center"><!--container -->
-        <div class="row"><!--row -->
-          <div class="col-md-12 capa">
-            
-            <div id="carousel-spotify" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner"><!--Inner -->
-                
-                <div class="carousel-item active">
-                  <h1>Música para todos</h1>
-                  <a href="" class="btn btn-lg btn-custom btn-roxo">
-                    Aproveite o Spotify Free
-                  </a>
-
-                  <a href="" class="btn btn-lg btn-custom btn-branco">
-                    Obter Spotify Premium
-                  </a>
-                </div>
-
-                <div class="carousel-item">
-                  <h1>As melhores rádios</h1>
-                  <a href="" class="btn btn-lg btn-custom btn-branco">
-                    <i class="fas fa-music"></i> Ouça agora
-                  </a>
-                </div>
-
-              </div><!--/Inner -->
-
-              <!-- Controles -->
-              <a href="#carousel-spotify" class="carousel-control-prev" data-slide="prev">
-                <i class="fas fa-angle-left fa-3x"></i>
-              </a>
-
-              <a href="#carousel-spotify" class="carousel-control-next" data-slide="next">
-                <i class="fas fa-angle-right fa-3x"></i>
-              </a>
-
-            </div>
-
-          </div>
-        </div><!--/row -->
-      </div><!--/container -->
-    </section><!--/home -->
-
-    <section id="servicos" class="caixa">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="row albuns">
-              <div class="col-md-6">
-                <img src="imagens/img1.jpg" alt="tag" class="img-fluid">
-              </div>
-              <div class="col-md-6">
-                <img src="imagens/img2.jpg" alt="tag2" class="img-fluid">
-              </div>
-            </div>
-            <div class="row albuns">
-              <div class="col-md-6">
-                <img src="imagens/img3.jpg" alt="tag3" class="img-fluid">
-              </div>
-              <div class="col-md-6">
-                <img src="imagens/img4.jpg" alt="tag4" class="img-fluid">
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            
-            <h2>O que o Spotify tem?</h2>
-
-            <h3>Músicas</h3>
-            <p>O Spotify tem milhões de músicas. Escute seus sons favoritos, descubra novas músicas e reúna seus favoritos em um só lugar.</p>
-
-            <h3>Playlists</h3>
-            <p>No Spotify você encontra uma playlist para cada momento. Todas feitas por fanáticos e especialistas da música.</p>
-
-            <h3>Novos lançamentos</h3>
-            <p>Escute os novos lançamentos de singles e álbuns da semana e veja o que está bombando no Top 50.</p>
-
-          </div>
-        </div>
+        
       </div>
-    </section>
 
-
-    <section id="recursos" class="caixa">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-
-            <h2>Fácil</h2>
-            <h3>Buscar</h3>
-            <p>Já sabe o que quer escutar? É só procurar e apertar o play.
-            </p>
-
-            <h3>Navegar</h3>
-            <p>Veja os novos lançamentos, o que está bombando nas paradas elas melhores playlists para o seu momento.
-            </p>
-
-            <h3>Descobrir</h3>
-            <p>Curta músicas novas toda segunda-feira com uma playlist personalizada pra você. Ou relaxe e curta uma das rádios.
-            </p>
-
-          </div>
-          <div class="col-md-8">
-            <div class="row rotacionar">
-              <div class="col-md-6">
-                <img src="imagens/iphone1.png" alt="tag5" class="img-fluid">
-              </div>
-              <div class="col-md-6">
-                <img src="imagens/iphone2.png" alt="tag6" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="login-button">
+        <button onclick="evento()">Entrar</button>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2">
-            <img src="imagens/spotify.svg" alt="tag10" width="142">
-          </div>
-          <div class="col-md-2">
-            <h4>company</h4>
-            <ul class="navbar-nav">
-              <li><a href="">Sobre</a></li>
-              <li><a href="">Empregos</a></li>
-              <li><a href="">Imprensa</a></li>
-              <li><a href="">Novidades</a></li>
-            </ul>
-          </div>
-          <div class="col-md-2">
-            <h4>comunidades</h4>
-            <ul class="navbar-nav">
-              <li><a href="">Artistas</a></li>
-              <li><a href="">Desenvolvedores</a></li>
-              <li><a href="">Marcas</a></li>
-            </ul>
-          </div>
-          <div class="col-md-2">
-            <h4>links uteis</h4>
-            <ul class="navbar-nav">
-              <li><a href="">Ajuda</a></li>
-              <li><a href="">Presentes</a></li>
-              <li><a href="">Player da web</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul>
-              <li>
-                <a href=""><img  src="imagens/facebook.png" alt="fave"></a>
-              </li>
-              <li>
-                <a href=""><img src="imagens/twitter.png" alt="twitter"></a>
-              </li>
-              <li>
-                <a href=""><img src="imagens/instagram.png" alt="instagram"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+  <p class="password-requirements">
+    <strong>Requisitos da Senha:</strong>
+    Sua senha deve atender aos seguintes critérios para garantir a segurança da sua conta:
+      <strong>Comprimento Mínimo:</strong> A senha deve ter pelo menos 6 caracteres.
+      <strong>Letra Maiúscula:</strong> Deve conter pelo menos uma letra maiúscula (A-Z).
+      <strong>Letra Minúscula:</strong> Deve incluir pelo menos uma letra minúscula (a-z).
+      <strong>Sem Espaços:</strong> Não deve conter espaços em branco.
 
-    <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+  </p>
+
+  <script src="js/login.js"></script>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+</body>
+
 </html>

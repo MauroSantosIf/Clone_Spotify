@@ -208,7 +208,7 @@ body {
   
   .login-button {
     position: relative;
-    top: -30px;
+    top: 10px;
     left: 150px;
   }
   
@@ -242,12 +242,6 @@ body {
     color: var(--dark-gray-color);
   }
   
-  .p-message-error {
-    color: var(--red-error-color);
-    font-size: 0.8rem;
-    display: none;
-    margin-bottom: 15px;
-  }
   
   .p-error-message-icon {
     width: 18px;
@@ -310,3 +304,114 @@ body {
       width: 130px;
     }
   }
+
+/* Estilos para o container do campo de senha */
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-container input {
+  padding-right: 40px; /* Espaço para o ícone */
+  width: 100%; /* Ajusta o campo de senha para ocupar o espaço disponível */
+}
+
+.password-container .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Define o tamanho do ícone */
+  height: 20px; /* Define o tamanho do ícone */
+  /*cursor: pointer;*/
+  z-index: 10; /* Garante que o ícone fique acima do campo de entrada */
+}
+
+.p-message-error {
+  color: red;
+  font-size: 0.8rem;
+  display: none;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  padding: 5px;
+  border: 1px solid red;
+  border-radius: 4px;
+  background-color: #fdd;
+}
+
+/* Responsividade das mensagens de erro */
+@media (max-width: 600px) {
+  .p-message-error {
+    font-size: 0.7rem;
+    padding: 3px;
+  }
+}
+
+/* Estilo básico para o parágrafo de requisitos da senha */
+.password-requirements {
+  color: #333;
+  font-size: 0.9rem;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 450px; /* Define uma largura máxima para o parágrafo */
+}
+
+.password-requirements strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.password-requirements ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.password-requirements li {
+  margin-bottom: 5px;
+}
+
+/* Responsividade para telas menores */
+/* Estilo básico para o parágrafo de requisitos da senha */
+.password-requirements {
+  color: #333;
+  font-size: 0.9rem;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 450px; /* Define uma largura máxima para o parágrafo */
+}
+
+.password-requirements strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.password-requirements ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.password-requirements li {
+  margin-bottom: 5px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  .password-requirements {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+  
+}
+
